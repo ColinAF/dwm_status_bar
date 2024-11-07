@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+FILES="dwm_statusbar.sh"
+
+for file in $FILES
+do
+	echo "Installing $file"
+	rm $SCRIPTS/$file
+	cp ${PWD}/$file $SCRIPTS/$file
+
+done 
+
